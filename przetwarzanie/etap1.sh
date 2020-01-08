@@ -22,13 +22,13 @@ WHERE
 #title_popularity
 hive -e "CREATE TABLE IF NOT EXISTS etap1.title_popularity AS
 SELECT
-  imdb.title_ratings.tconst,
-  imdb.title_ratings.averagerating * imdb.title_ratings.numvotes as popularity,
-  imdb.title_basics.startyear as year,
-  imdb.title_basics.primarytitle
+  tr.tconst,
+  tr.averagerating * tr.numvotes as popularity,
+  tb.startyear as year,
+  tb.primarytitle
 FROM
-  imdb.title_ratings
-  LEFT JOIN imdb.title_basics ON imdb.title_ratings.tconst = imdb.title_basics.tconst;"
+  imdb.title_ratings tr
+  LEFT JOIN imdb.title_basics tb ON tr.tconst = tb.tconst;"
   
 #title_episode
 hive -e "CREATE TABLE IF NOT EXISTS etap1.title_episode AS
