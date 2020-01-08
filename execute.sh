@@ -78,6 +78,12 @@ function create_templates_directory() {
 
 function create_tables_in_hive() {
 
+    # imdb database
+    echo -e "\e[32mHive: Creating database: imdb"
+    echo -e "\e[39m"
+
+    hive -e "CREATE DATABASE IF NOT EXISTS imdb;"
+
     # title.basics
     echo -e "\e[32mHive: Creating table: title_basics"
     echo -e "\e[39m"
