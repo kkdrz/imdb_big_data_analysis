@@ -1,2 +1,7 @@
-CREATE TABLE name_popularity (nconst VARCHAR(255) PRIMARY KEY, year INT, popularity_as_actor FLOAT, popularity_as_director FLOAT, primary_name VARCHAR(255));
-CREATE TABLE series_popularity (tconst VARCHAR(255) PRIMARY KEY, popularity FLOAT, primary_title VARCHAR(255), season_number INT, episode_number INT);
+CREATE TABLE actor_popularity (nconst VARCHAR(255) PRIMARY KEY, year INT, popularity FLOAT, primaryname VARCHAR(255));
+CREATE TABLE director_popularity (nconst VARCHAR(255) PRIMARY KEY, year INT, popularity FLOAT, primaryname VARCHAR(255));
+CREATE TABLE series_popularity (tconst VARCHAR(255) PRIMARY KEY, popularity FLOAT, primarytitle VARCHAR(255), seasonnumber INT);
+
+LOAD DATA INFILE './actor_popularity.csv' INTO TABLE actor_popularity
+LOAD DATA INFILE './director_popularity.csv' INTO TABLE director_popularity
+LOAD DATA INFILE './series_popularity.csv' INTO TABLE series_popularity
