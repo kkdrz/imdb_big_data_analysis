@@ -51,7 +51,11 @@ function load_data_from_hdfs_to_hive() {
 }
 
 function functional_test() {
-    hive -e "CREATE DATABASE func_etap1"
+
+    echo -e "\e[32mHive: Running functional test: etap1.title_crew"
+    echo -e "\e[39m"
+
+    hive -e "CREATE DATABASE IF NOT EXISTS func_etap1"
 
     hive -e "CREATE TABLE IF NOT EXISTS func_etap1.title_crew AS
 SELECT
@@ -68,7 +72,14 @@ WHERE
   OR tp.category = 'actor'
   OR tp.category = 'actress';"
 
-  echo $(hive -e "Select from func_etap1.title_crew")
+    echo $(hive -e "Select * from func_etap1.title_crew")
+
+    echo -e "\e[32mCleaning after test"
+    echo -e "\e[39m"
+
+    hive -e "DROP DATABASE IF EXISTS func_etap1 CASCADE;"
+    hive -e "DROP DATABASE IF EXISTS func_imdb CASCADE;"
+
 }
 
 create_hdfs_directories
