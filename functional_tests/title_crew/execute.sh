@@ -1,21 +1,18 @@
 #!/bin/bash
 
 function create_hdfs_directories() {
-    echo -e "\e[32mCreating hadoop directory: skladowanie"
+    echo -e "\e[32mCreating hadoop directory: func_skladowanie"
     echo -e "\e[39m"
-    hadoop fs -mkdir skladowanie
+    hadoop fs -rm -R -f -skipTrash func_skladowanie
+    hadoop fs -mkdir func_skladowanie
 
-    echo -e "\e[32mCreating hadoop directory: posrednie"
-    echo -e "\e[39m"
-
-    hadoop fs -mkdir posrednie
 }
 
 function copy_data_files_to_hdfs() {
 
-    echo -e "\e[32mMoving files from ./database to hdfs:skladowanie"
+    echo -e "\e[32mMoving files from ./database to hdfs:func_skladowanie"
     echo -e "\e[39m"
-    hadoop fs -copyFromLocal database/ skladowanie
+    hadoop fs -copyFromLocal database/ func_skladowanie
 
 }
 
