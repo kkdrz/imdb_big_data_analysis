@@ -80,6 +80,8 @@ WHERE
     hive -e "DROP DATABASE IF EXISTS func_etap1 CASCADE;"
     hive -e "DROP DATABASE IF EXISTS func_imdb CASCADE;"
 
+# Expected output
+# tt01 nm01 true false Jan Kowalski tt02 nm01 false true Jan Kowalski
 }
 
 create_hdfs_directories
