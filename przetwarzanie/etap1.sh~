@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# CREATE etap1 database
+hive -e "Create DATABASE etap1"
+
+# CREATE reduced name_basics table
+hive -e "CREATE TABLE IF NOT EXISTS etap1.name_basics AS SELECT nconst, primaryName FROM default.name_basics;"
+
+# Rozbijanie po spacjach
+SELECT tconst, uniqueDirectors as director, writers FROM (
+SELECT tconst, split(directors, '\,') as directors, writers  FROM default.title_crew P
+) a lateral view explode(a.directors) exploded as uniqueDirectors;

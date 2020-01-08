@@ -1,0 +1,6 @@
+hive -e "DROP TABLE name_basics;"
+hive -e "Drop TABLE title_basics;"
+hive -e "drop table title_crew;"
+hive -e "drop table title_episode;"
+hive -e "drop table title_principals;"
+hive -e "drop table title_ratings;"
