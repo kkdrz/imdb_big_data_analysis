@@ -40,11 +40,11 @@ function load_data_from_hdfs_to_hive() {
 
     echo -e "\e[32mHive: Load data to title_principals"
     echo -e "\e[39m"
-    hive -e "LOAD DATA INPATH '/user/cloudera/skladowanie/database/title.principals.tsv' OVERWRITE INTO TABLE func_imdb.title_principals;"
+    hive -e "LOAD DATA INPATH '/user/cloudera/func_skladowanie/database/title.principals.tsv' OVERWRITE INTO TABLE func_imdb.title_principals;"
 
     echo -e "\e[32mHive: Load data to name_basics"
     echo -e "\e[39m"
-    hive -e "LOAD DATA INPATH '/user/cloudera/skladowanie/database/name.basics.tsv' OVERWRITE INTO TABLE func_imdb.name_basics;"
+    hive -e "LOAD DATA INPATH '/user/cloudera/func_skladowanie/database/name.basics.tsv' OVERWRITE INTO TABLE func_imdb.name_basics;"
 
     echo -e "\e[32mHive: Data loading finished"
     echo -e "\e[39m"
