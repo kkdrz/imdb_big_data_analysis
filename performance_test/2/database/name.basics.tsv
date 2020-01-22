@@ -2,4 +2,12 @@ nconst	primaryName	birthYear	deathYear	primaryProfession	knownForTitles
 nm01	Jan Kowalski	1980	2020	actor,soundtrack,producer	tt01,tt02
 nm02	Kamil Nowak	1980	2020	actor,soundtrack,producer	tt04
 nm03	Bartek Kisiel	1999	2020	actor,soundtrack,producer	tt02
-nm04	Piotr Ziomek	1980	2020	actor,soundtrack,producer	tt03
+nm05	Piotr Ziomek	1980	2020	actor,soundtrack,producer	tt03
+nm06	Jan Kowalski	1980	2020	actor,soundtrack,producer	tt01,tt02
+nm07	Kamil Nowak	1980	2020	actor,soundtrack,producer	tt04
+nm08	Bartek Kisiel	1999	2020	actor,soundtrack,producer	tt02
+nm09	Piotr Ziomek	1980	2020	actor,soundtrack,producer	tt03
+nm013	Jan Kowalski	1980	2020	actor,soundtrack,producer	tt01,tt02
+nm010	Kamil Nowak	1980	2020	actor,soundtrack,producer	tt04
+nm011	Bartek Kisiel	1999	2020	actor,soundtrack,producer	tt02
+nm012	Piotr Ziomek	1980	2020	actor,soundtrack,producer	tt03
