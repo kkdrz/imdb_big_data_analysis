@@ -1,0 +1,19 @@
+tconst	ordering	nconst	category	job	characters
+tt01	1	nm01	director	\N	["Whatever"]
+tt02	2	nm01	actor	\N	\N
+tt03	3	nm01	cinematographer	director of photography	\N
+tt01	4	nm02	actor	\N	["Whatever"]
+tt01	5	nm03	actor	\N	\N
+tt01	6	nm04	actor	\N	["Whatever"]
+tt02	7	nm01	actor	\N	\N
+tt01	8	nm01	director	\N	["Whatever"]
+tt02	9	nm01	actor	\N	\N
+tt011	1	nm04	director	\N	\N	 
+tt011	9	nm01	actor	\N	\N	
+tt012	9	nm01	actor	\N	\N
+tt012	9	nm03	actor	\N	\N
+tt013	9	nm02	actor	\N	\N
+tt013	9	nm02	actor	\N	\N
+tt021	9	nm03	actor	\N	\N
+tt021	9	nm04	actor	\N	\N
+

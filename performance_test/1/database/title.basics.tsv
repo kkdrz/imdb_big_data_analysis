@@ -1,0 +1,12 @@
+tconst	titleType	primaryTitle	originalTitle	isAdult	startYear	endYear	runtimeMinutes	genres
+tt01	short	Ciezka praca nie poplaca	You dont have to be master	0	1999	\N	1	Documentary,Comedy
+tt02	short	Kiedy to sie skonczy	Lokking for the end	0	2001	\N	5	Animation,Documentary,Comedy
+tt03	short	Jeszcze tylko pol roku	Enough this sh	0	2020	\N	4	Animation,Comedy,Documentary
+tt04	short	Mamo pomocy	Mom halp	0	2019	\N	\N	Documentary,Short,Comedy
+tt011	episode	EpisodeS01E01	EpisodeS01E01	0	1999	\N	2	Comedy
+tt012	episode	EpisodeS01E02	EpisodeS01E02	0	1999	\N	2	Comedy
+tt013	episode	EpisodeS01E03	EpisodeS01E03	0	1999	\N	2	Comedy
+tt021	episode	EpisodeS02E01	EpisodeS02E01	0	2000	\N	2	Comedy
+tt022	episode	EpisodeS02E02	EpisodeS02E02	0	2000	\N	2	Comedy
+tt023	episode	EpisodeS02E03	EpisodeS02E03	0	2000	\N	2	Comedy
+tt024	episode	EpisodeS02E04	EpisodeS02E04	0	2000	\N	2	Comedy
